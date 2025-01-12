@@ -1,10 +1,14 @@
 {
   "name": "illusory0x0/fun",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "readme": "README.md",
-  "repository": "",
+  "repository": "https://github.com/mcatfptt/fun",
   "license": "Apache-2.0",
-  "keywords": [],
+  "keywords": [
+    "functional-programming",
+    "utils",
+    "curry"
+  ],
   "description": "",
   "source": "src"
 }
