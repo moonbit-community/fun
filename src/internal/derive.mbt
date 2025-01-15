@@ -1,40 +1,76 @@
 ///|
+let alphabet = [
+  "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
+  "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+]
+
+///|
+let lower_alphabet = [
+  "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+  "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+]
+
+///|
 fn derive_alias(n : Int) -> Unit {
-  if n > 26 {
+  if n > 27 {
     panic()
   }
-  let alphabet = [
-    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
-    "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
-  ]
-
-
-  let arrc = fn(xs : Array[String] ) {
+  let arrc = fn(xs : Array[String]) {
     // let xs = @string.concat(xs,separator=",")
-    let n =xs.length()
-    let xs = String::concat(xs,separator=",")
+    let n = xs.length() - 1
+    let xs = String::concat(xs, separator=",")
     "Arrow\{n}[\{xs}]"
   }
-
   let arrd = fn(xs : Array[String]) {
     let x = xs[0]
     let xs = xs[1:]
-
-    xs.fold(init="(\{x})",fn(s,x) { 
-      "\{s} -> (\{x})"
-    })
+    xs.fold(init="(\{x})", fn(s, x) { "\{s} -> (\{x})" })
   }
-
-  for i in 1..<n  {
+  for i in 1..<n {
     let c = arrc(alphabet[0:i].iter().to_array())
     let d = arrd(alphabet[0:i].iter().to_array())
     let s = "pub typealias \{c} = \{d}"
     println(s)
   }
-
 }
 
+///|
+fn derive_apply(n : Int) -> Unit {
+  if n > 26 {
+    panic()
+  }
+  let parm = fn(n : Int) {
+    let ftyps = String::concat(alphabet[0:n].iter().to_array(), separator=",")
+    let ftypn = n
+    let fty = "Arrow\{n-1}[\{ftyps}]"
+    let tailing = fn(n : Int) {
+      let tm = lower_alphabet[n]
+      let ty = alphabet[n]
+      "\{tm} : \{ty}"
+    }
+    let parm = ["func : \{fty}"]
+    for i in 0..<(n - 1) {
+      parm.push(tailing(i))
+    }
+    String::concat(parm, separator=", ")
+  }
+  let defs = fn(n : Int) {
+    let arr = ["func"]
+    for i in 0..<(n - 1) {
+      arr.push("(\{lower_alphabet[i]})")
+    }
+    String::concat(arr)
+  }
+  let tmparm = "(\{parm(n)})"
+  let retty = alphabet[n - 1]
+  let sig = tmparm + " -> \{retty}"
+  let tysig = String::concat(alphabet[0:n].iter().to_array(), separator=", ")
+  let tysig = "[\{tysig}]"
+  let ds = defs(n)
+  let r = "pub fn apply\{n-1}\{tysig}\{sig} { \{ds} }"
+  println(r)
+}
 
 test "derive" {
-  derive_alias(26)
+
 }
