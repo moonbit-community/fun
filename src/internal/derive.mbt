@@ -71,6 +71,46 @@ fn derive_apply(n : Int) -> Unit {
   println(r)
 }
 
-test "derive" {
+///|
+fn derive_uncurry(n : Int) -> Unit {
+  if n > 26 {
+    panic()
+  }
+  let parm = fn(n : Int) {
+    let ftyps = String::concat(alphabet[0:n].iter().to_array(), separator=",")
+    let ftypn = n
+    let fty = "Arrow\{n-1}[\{ftyps}]"
+    let parm = "func : \{fty}"
+    parm
+  }
+  let defs = fn(n : Int) {
+    let arr = ["func"]
+    for i in 0..<(n - 1) {
+      arr.push("(\{lower_alphabet[i]})")
+    }
+    let body = String::concat(arr)
 
+    let parm = String::concat(lower_alphabet[0:n-1].iter().to_array(),separator=",")
+    "fn(\{parm}) { \{body} }"
+  }
+  let tmparm = "(\{parm(n)})"
+  
+  let retty = String::concat(alphabet[0:n-1].iter().to_array()
+    ,separator=",") 
+  let retty = "(\{retty}) -> \{ alphabet[n - 1]}"
+  
+
+
+  let sig = tmparm + " -> \{retty}"
+  let tysig = String::concat(alphabet[0:n].iter().to_array(), separator=", ")
+  let tysig = "[\{tysig}]"
+  let ds = defs(n)
+  let r = "pub fn uncurry\{n-1}\{tysig}\{sig} { \{ds} }"
+  println(r)
+}
+
+test "derive" {
+  for i in 1..<27 {
+    derive_uncurry(i)
+  }
 }
