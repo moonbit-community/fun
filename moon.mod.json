@@ -2,13 +2,13 @@
   "name": "illusory0x0/fun",
   "version": "0.2.0",
   "readme": "README.md",
-  "repository": "https://github.com/mcatfptt/fun",
+  "repository": "https://github.com/moonbit-community/fun",
   "license": "Apache-2.0",
   "keywords": [
     "functional-programming",
     "utils",
     "curry"
   ],
-  "description": "",
+  "description": "A library that provides function composition, curry, uncurry, arrow function alias, curry function application.",
   "source": "src"
 }
