@@ -1,0 +1,222 @@
+package illusory0x0/fun
+
+// Values
+fn apply1[A, B]((A) -> B, A) -> B
+
+fn apply10[A, B, C, D, E, F, G, H, I, J, K]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> K, A, B, C, D, E, F, G, H, I, J) -> K
+
+fn apply11[A, B, C, D, E, F, G, H, I, J, K, L]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> L, A, B, C, D, E, F, G, H, I, J, K) -> L
+
+fn apply12[A, B, C, D, E, F, G, H, I, J, K, L, M]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> M, A, B, C, D, E, F, G, H, I, J, K, L) -> M
+
+fn apply13[A, B, C, D, E, F, G, H, I, J, K, L, M, N]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> N, A, B, C, D, E, F, G, H, I, J, K, L, M) -> N
+
+fn apply14[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> O, A, B, C, D, E, F, G, H, I, J, K, L, M, N) -> O
+
+fn apply15[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> P, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O) -> P
+
+fn apply16[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> Q, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P) -> Q
+
+fn apply17[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> R, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q) -> R
+
+fn apply18[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> S, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R) -> S
+
+fn apply19[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> T, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S) -> T
+
+fn apply2[A, B, C]((A) -> (B) -> C, A, B) -> C
+
+fn apply20[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> U, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T) -> U
+
+fn apply21[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> V, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U) -> V
+
+fn apply22[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> W, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V) -> W
+
+fn apply23[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> X, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W) -> X
+
+fn apply24[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> (X) -> Y, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X) -> Y
+
+fn apply25[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> (X) -> (Y) -> Z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y) -> Z
+
+fn apply3[A, B, C, D]((A) -> (B) -> (C) -> D, A, B, C) -> D
+
+fn apply4[A, B, C, D, E]((A) -> (B) -> (C) -> (D) -> E, A, B, C, D) -> E
+
+fn apply5[A, B, C, D, E, F]((A) -> (B) -> (C) -> (D) -> (E) -> F, A, B, C, D, E) -> F
+
+fn apply6[A, B, C, D, E, F, G]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> G, A, B, C, D, E, F) -> G
+
+fn apply7[A, B, C, D, E, F, G, H]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> H, A, B, C, D, E, F, G) -> H
+
+fn apply8[A, B, C, D, E, F, G, H, I]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> I, A, B, C, D, E, F, G, H) -> I
+
+fn apply9[A, B, C, D, E, F, G, H, I, J]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> J, A, B, C, D, E, F, G, H, I) -> J
+
+fn compose[A, B, C]((B) -> C, (A) -> B) -> (A) -> C
+
+fn compose2[A, B, C, D]((C) -> D, (A) -> (B) -> C) -> (A) -> (B) -> D
+
+fn compose3[A, B, C, D, E]((D) -> E, (A) -> (B) -> (C) -> D) -> (A) -> (B) -> (C) -> E
+
+fn compose4[A, B, C, D, E, F]((E) -> F, (A) -> (B) -> (C) -> (D) -> E) -> (A) -> (B) -> (C) -> (D) -> F
+
+fn const_[A, B](A) -> (B) -> A
+
+fn curry[A, B, C]((A, B) -> C) -> (A) -> (B) -> C
+
+fn curry10[A, B, C, D, E, F, G, H, I, J, K]((A, B, C, D, E, F, G, H, I, J) -> K) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> K
+
+fn curry11[A, B, C, D, E, F, G, H, I, J, K, L]((A, B, C, D, E, F, G, H, I, J, K) -> L) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> L
+
+fn curry12[A, B, C, D, E, F, G, H, I, J, K, L, M]((A, B, C, D, E, F, G, H, I, J, K, L) -> M) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> M
+
+fn curry13[A, B, C, D, E, F, G, H, I, J, K, L, M, N]((A, B, C, D, E, F, G, H, I, J, K, L, M) -> N) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> N
+
+fn curry14[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O]((A, B, C, D, E, F, G, H, I, J, K, L, M, N) -> O) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> O
+
+fn curry15[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O) -> P) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> P
+
+fn curry16[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P) -> Q) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> Q
+
+fn curry17[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q) -> R) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> R
+
+fn curry18[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R) -> S) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> S
+
+fn curry19[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S) -> T) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> T
+
+fn curry2[A, B, C]((A, B) -> C) -> (A) -> (B) -> C
+
+fn curry20[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T) -> U) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> U
+
+fn curry21[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U) -> V) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> V
+
+fn curry22[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V) -> W) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> W
+
+fn curry23[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W) -> X) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> X
+
+fn curry24[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X) -> Y) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> (X) -> Y
+
+fn curry25[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]((A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y) -> Z) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> (X) -> (Y) -> Z
+
+fn curry3[A, B, C, D]((A, B, C) -> D) -> (A) -> (B) -> (C) -> D
+
+fn curry4[A, B, C, D, E]((A, B, C, D) -> E) -> (A) -> (B) -> (C) -> (D) -> E
+
+fn curry5[A, B, C, D, E, F]((A, B, C, D, E) -> F) -> (A) -> (B) -> (C) -> (D) -> (E) -> F
+
+fn curry6[A, B, C, D, E, F, G]((A, B, C, D, E, F) -> G) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> G
+
+fn curry7[A, B, C, D, E, F, G, H]((A, B, C, D, E, F, G) -> H) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> H
+
+fn curry8[A, B, C, D, E, F, G, H, I]((A, B, C, D, E, F, G, H) -> I) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> I
+
+fn curry9[A, B, C, D, E, F, G, H, I, J]((A, B, C, D, E, F, G, H, I) -> J) -> (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> J
+
+fn flip[A, B, C]((A) -> (B) -> C) -> (B) -> (A) -> C
+
+fn id[A](A) -> A
+
+fn negate[A]((A) -> Bool) -> (A) -> Bool
+
+fn uncurry10[A, B, C, D, E, F, G, H, I, J, K]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> K) -> (A, B, C, D, E, F, G, H, I, J) -> K
+
+fn uncurry11[A, B, C, D, E, F, G, H, I, J, K, L]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> L) -> (A, B, C, D, E, F, G, H, I, J, K) -> L
+
+fn uncurry12[A, B, C, D, E, F, G, H, I, J, K, L, M]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> M) -> (A, B, C, D, E, F, G, H, I, J, K, L) -> M
+
+fn uncurry13[A, B, C, D, E, F, G, H, I, J, K, L, M, N]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> N) -> (A, B, C, D, E, F, G, H, I, J, K, L, M) -> N
+
+fn uncurry14[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> O) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N) -> O
+
+fn uncurry15[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> P) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O) -> P
+
+fn uncurry16[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> Q) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P) -> Q
+
+fn uncurry17[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> R) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q) -> R
+
+fn uncurry18[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> S) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R) -> S
+
+fn uncurry19[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> T) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S) -> T
+
+fn uncurry2[A, B, C]((A) -> (B) -> C) -> (A, B) -> C
+
+fn uncurry20[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> U) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T) -> U
+
+fn uncurry21[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> V) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U) -> V
+
+fn uncurry22[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> W) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V) -> W
+
+fn uncurry23[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> X) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W) -> X
+
+fn uncurry24[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> (X) -> Y) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X) -> Y
+
+fn uncurry25[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> (X) -> (Y) -> Z) -> (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y) -> Z
+
+fn uncurry3[A, B, C, D]((A) -> (B) -> (C) -> D) -> (A, B, C) -> D
+
+fn uncurry4[A, B, C, D, E]((A) -> (B) -> (C) -> (D) -> E) -> (A, B, C, D) -> E
+
+fn uncurry5[A, B, C, D, E, F]((A) -> (B) -> (C) -> (D) -> (E) -> F) -> (A, B, C, D, E) -> F
+
+fn uncurry6[A, B, C, D, E, F, G]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> G) -> (A, B, C, D, E, F) -> G
+
+fn uncurry7[A, B, C, D, E, F, G, H]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> H) -> (A, B, C, D, E, F, G) -> H
+
+fn uncurry8[A, B, C, D, E, F, G, H, I]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> I) -> (A, B, C, D, E, F, G, H) -> I
+
+fn uncurry9[A, B, C, D, E, F, G, H, I, J]((A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> J) -> (A, B, C, D, E, F, G, H, I) -> J
+
+// Types and methods
+
+// Type aliases
+pub typealias Arrow[A, B] = (A) -> B
+
+pub typealias Arrow10[A, B, C, D, E, F, G, H, I, J, K] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> K
+
+pub typealias Arrow11[A, B, C, D, E, F, G, H, I, J, K, L] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> L
+
+pub typealias Arrow12[A, B, C, D, E, F, G, H, I, J, K, L, M] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> M
+
+pub typealias Arrow13[A, B, C, D, E, F, G, H, I, J, K, L, M, N] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> N
+
+pub typealias Arrow14[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> O
+
+pub typealias Arrow15[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> P
+
+pub typealias Arrow16[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> Q
+
+pub typealias Arrow17[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> R
+
+pub typealias Arrow18[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> S
+
+pub typealias Arrow19[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> T
+
+pub typealias Arrow2[A, B, C] = (A) -> (B) -> C
+
+pub typealias Arrow20[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> U
+
+pub typealias Arrow21[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> V
+
+pub typealias Arrow22[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> W
+
+pub typealias Arrow23[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> X
+
+pub typealias Arrow24[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> (X) -> Y
+
+pub typealias Arrow25[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> (J) -> (K) -> (L) -> (M) -> (N) -> (O) -> (P) -> (Q) -> (R) -> (S) -> (T) -> (U) -> (V) -> (W) -> (X) -> (Y) -> Z
+
+pub typealias Arrow3[A, B, C, D] = (A) -> (B) -> (C) -> D
+
+pub typealias Arrow4[A, B, C, D, E] = (A) -> (B) -> (C) -> (D) -> E
+
+pub typealias Arrow5[A, B, C, D, E, F] = (A) -> (B) -> (C) -> (D) -> (E) -> F
+
+pub typealias Arrow6[A, B, C, D, E, F, G] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> G
+
+pub typealias Arrow7[A, B, C, D, E, F, G, H] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> H
+
+pub typealias Arrow8[A, B, C, D, E, F, G, H, I] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> I
+
+pub typealias Arrow9[A, B, C, D, E, F, G, H, I, J] = (A) -> (B) -> (C) -> (D) -> (E) -> (F) -> (G) -> (H) -> (I) -> J
+
+// Traits
+

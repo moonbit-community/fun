@@ -4,7 +4,10 @@ pub fn compose[A, B, C](f : Arrow[B, C], g : Arrow[A, B]) -> Arrow[A, C] {
 }
 
 ///|
-pub fn compose2[A, B, C, D](f : Arrow[C, D], g : Arrow2[A, B, C]) -> Arrow2[A, B, D] {
+pub fn compose2[A, B, C, D](
+  f : Arrow[C, D],
+  g : Arrow2[A, B, C]
+) -> Arrow2[A, B, D] {
   fn(x) { fn(y) { f(g(x)(y)) } }
 }
 
