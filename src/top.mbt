@@ -3,7 +3,7 @@ pub fn[A] id(x : A) -> A = "%identity"
 
 ///|
 pub fn[A, B] const_(t : A) -> Arrow[B, A] {
-  fn { _ => t }
+  fn(_) { t }
 }
 
 ///|
